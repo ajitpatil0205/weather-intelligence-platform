@@ -1,0 +1,122 @@
+export const WEATHER_TYPES = [
+  {
+    id: "flooding",
+    name: "Flooding",
+    icon: "Waves",
+    defaultSeverity: "HIGH",
+    color: "#ef4444",
+    bgClass: "bg-red-500/10 border-red-500/30 text-red-400",
+    description: "Inundation of land and roads due to excess rainfall or overflowing reservoirs.",
+    typicalThreshold: "> 100mm in 3h",
+    activeCount: 14,
+    trend: "+28% vs last week"
+  },
+  {
+    id: "heavy_rainfall",
+    name: "Heavy Rainfall",
+    icon: "CloudRain",
+    defaultSeverity: "HIGH",
+    color: "#38bdf8",
+    bgClass: "bg-cyan-500/10 border-cyan-500/30 text-cyan-400",
+    description: "Precipitation exceeding 64.5mm to 115.5mm in 24 hours.",
+    typicalThreshold: "65-115 mm/day",
+    activeCount: 38,
+    trend: "+12% vs last week"
+  },
+  {
+    id: "thunderstorm",
+    name: "Thunderstorm",
+    icon: "CloudLightning",
+    defaultSeverity: "MEDIUM",
+    color: "#f59e0b",
+    bgClass: "bg-amber-500/10 border-amber-500/30 text-amber-400",
+    description: "Convective storm accompanied by lightning, thunder, and gusty winds.",
+    typicalThreshold: "Wind > 45 km/h + Lightning",
+    activeCount: 26,
+    trend: "-5% vs last week"
+  },
+  {
+    id: "heatwave",
+    name: "Heatwave",
+    icon: "Sun",
+    defaultSeverity: "HIGH",
+    color: "#f97316",
+    bgClass: "bg-orange-500/10 border-orange-500/30 text-orange-400",
+    description: "Prolonged period of excessively hot weather with temperatures >= 40°C in plains.",
+    typicalThreshold: "Temp >= 40°C (Plains)",
+    activeCount: 18,
+    trend: "+40% vs last week"
+  },
+  {
+    id: "fog",
+    name: "Fog",
+    icon: "CloudFog",
+    defaultSeverity: "LOW",
+    color: "#94a3b8",
+    bgClass: "bg-slate-500/10 border-slate-500/30 text-slate-300",
+    description: "Dense condensation causing visibility to drop below 200m.",
+    typicalThreshold: "Visibility < 200m",
+    activeCount: 9,
+    trend: "-15% vs last week"
+  },
+  {
+    id: "dust_storm",
+    name: "Dust Storm",
+    icon: "Wind",
+    defaultSeverity: "MEDIUM",
+    color: "#d97706",
+    bgClass: "bg-amber-600/10 border-amber-600/30 text-amber-300",
+    description: "Strong winds carrying fine sand and soil particles, reducing visibility.",
+    typicalThreshold: "Gale wind > 50 km/h",
+    activeCount: 7,
+    trend: "+8% vs last week"
+  },
+  {
+    id: "strong_wind",
+    name: "Strong Wind",
+    icon: "Wind",
+    defaultSeverity: "MEDIUM",
+    color: "#0284c7",
+    bgClass: "bg-sky-500/10 border-sky-500/30 text-sky-400",
+    description: "Sustained surface winds exceeding 40-60 km/h capable of structural damage.",
+    typicalThreshold: "Wind > 50 km/h",
+    activeCount: 15,
+    trend: "+4% vs last week"
+  },
+  {
+    id: "cyclone",
+    name: "Cyclone",
+    icon: "Disc",
+    defaultSeverity: "HIGH",
+    color: "#dc2626",
+    bgClass: "bg-red-600/15 border-red-500/40 text-red-300",
+    description: "Severe tropical cyclonic storm with high gale winds, storm surge, and torrential rain.",
+    typicalThreshold: "Wind > 89 km/h",
+    activeCount: 2,
+    trend: "Active Low Pressure"
+  },
+  {
+    id: "hailstorm",
+    name: "Hailstorm",
+    icon: "CloudSnow",
+    defaultSeverity: "MEDIUM",
+    color: "#818cf8",
+    bgClass: "bg-indigo-500/10 border-indigo-500/30 text-indigo-400",
+    description: "Precipitation consisting of solid ice pellets causing crop and property damage.",
+    typicalThreshold: "Hail diameter > 5mm",
+    activeCount: 6,
+    trend: "-2% vs last week"
+  },
+  {
+    id: "lightning",
+    name: "Lightning",
+    icon: "Zap",
+    defaultSeverity: "HIGH",
+    color: "#eab308",
+    bgClass: "bg-yellow-500/10 border-yellow-500/30 text-yellow-300",
+    description: "Intense cloud-to-ground electrical discharge with high fatality hazard.",
+    typicalThreshold: "> 50 strikes/10 sq km",
+    activeCount: 31,
+    trend: "+19% vs last week"
+  }
+];
